@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antriksh Rana | Engineering Portfolio</title>
+    <title>Alex Doe | Engineering Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,6 +71,7 @@
           <a href="#about" class="nav-link">About Me</a>
           <a href="#takeaways" class="nav-link">Takeaways</a>
           <a href="#contact" class="nav-link">Contact</a>
+          <a href="#form" class="nav-link">Form</a>
         </nav>
         <button id="mobile-menu-button" class="md:hidden">
           <i data-lucide="menu" class="w-6 h-6"></i>
@@ -86,6 +87,9 @@
         >
         <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-100"
           >Contact</a
+        >
+        <a href="#form" class="block py-2 px-6 text-sm hover:bg-gray-100"
+          >Form</a
         >
       </div>
     </header>
@@ -389,6 +393,83 @@
           </div>
         </div>
       </section>
+
+      <!-- Add Form section before Footer -->
+<section id="form" class="py-20 md:py-32 bg-white">
+  <div class="container mx-auto px-6 max-w-lg">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+      Submit Your Details
+    </h2>
+    <form class="space-y-6">
+      <div>
+        <label
+          class="block text-gray-700 font-semibold mb-2"
+          for="firstName"
+        >
+          First Name
+        </label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          required
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <div>
+        <label
+          class="block text-gray-700 font-semibold mb-2"
+          for="lastName"
+        >
+          Last Name
+        </label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          required
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <div>
+        <label
+          class="block text-gray-700 font-semibold mb-2"
+          for="phone"
+        >
+          Phone Number
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <div>
+        <label
+          class="block text-gray-700 font-semibold mb-2"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-indigo-500 text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-indigo-600 transition-transform transform hover:scale-105 duration-300"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
     </main>
 
     <!-- Footer -->
